@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yugo206 | Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #0f0f13;
+      --card: #171722;
+      --text: #e6e6e6;
+      --muted: #9aa0a6;
+      --accent: #6c5ce7;
+    }
+
+    [data-theme="light"] {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #6c5ce7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      transition: 0.3s;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .typing {
+      color: var(--accent);
+      border-right: 2px solid var(--accent);
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Yugo206</div>
+    <button class="btn" onclick="toggleTheme()">Toggle theme</button>
+  </header>
+
+  <div class="hero">
+    <h1>Hi, I'm Yugo206</h1>
+    <p class="typing" id="typing"></p>
+    <p style="margin-top:15px;color:var(--muted)">
+      Student developer building Discord bots, web projects and open source tools.
+    </p>
+  </div>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Terminal Arcade</h3>
+        <p>Open source collection of beginner-friendly terminal games.</p>
+        <span class="tag">Active</span>
+      </div>
+
+      <div class="card">
+        <h3>Discord Bots</h3>
+        <p>Various bots built with discord.py for servers and moderation.</p>
+        <span class="tag">Learning</span>
+      </div>
+
+      <div class="card">
+        <h3>Web Portfolio</h3>
+        <p>This site itself. Built with pure HTML, CSS and JS.</p>
+        <span class="tag">In progress</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">HTML / CSS</div>
+      <div class="card">JavaScript (learning)</div>
+      <div class="card">Python (learning)</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Goals</h2>
+    <div class="card">
+      <p>Build useful open source projects and improve as a developer.</p>
+      <p class="tag">No magic, just consistency.</p>
+    </div>
+  </section>
+
+  <footer>
+    Built with boredom and caffeine.
+  </footer>
+
+  <script>
+    const text = "Discord bots • Web dev • Open source";
+    let i = 0;
+
+    function type() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 60);
+      }
+    }
+    type();
+
+    function toggleTheme() {
+      document.body.dataset.theme =
+        document.body.dataset.theme === "light" ? "" : "light";
+    }
+  </script>
+</body>
+</html>
