@@ -43,11 +43,22 @@ Repository:
 
 ## GitHub Stats
 
-https://github-readme-stats.vercel.app/api?username=Yugo206
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Yugo206&show_icons=true&theme=github_dark&hide_border=true" height="180"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yugo206&layout=compact&theme=github_dark&hide_border=true" height="180"/>
+</p>
 
-https://github-readme-stats.vercel.app/api/top-langs/?username=Yugo206
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Yugo206&theme=github-dark&hide_border=true"/>
+</p>
 
-https://streak-stats.demolab.com?user=Yugo206
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Yugo206&theme=darkhub&no-frame=true&row=1&column=6"/>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Yugo206&label=Profile%20Views&color=0e75b6&style=flat"/>
+</p>
 
 ## Contact
 
