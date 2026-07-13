@@ -43,9 +43,11 @@ Repository:
 
 ## GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Yugo206&show_icons=true)
+https://github-readme-stats.vercel.app/api?username=Yugo206
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Yugo206&layout=compact)
+https://github-readme-stats.vercel.app/api/top-langs/?username=Yugo206
+
+https://streak-stats.demolab.com?user=Yugo206
 
 ## Contact
 
